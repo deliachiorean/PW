@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Manage mesaje</title>
+</head>
+<body>
+	<fieldset>
+		<legend>Adaugare</legend>
+	<form method="post" action="http://localhost/exam/add_mesaj.php">
+		<label>Nr. ordine: </label><input type="number" name="id"><br>
+		<label>Text: </label><input type="text" name="text"><br>
+		<label>Secunde: </label><input type="number" name="secunde"><br>
+		<input type="submit" value="Adauga">
+	</form>
+	</fieldset>
+
+	<!-- <table>
+		<thead>
+			<td>Id</td>
+			<td>Text</td>
+			<td>Secunde</td>
+		</thead>
+		<tbody></tbody>
+	</table> -->
+
+	<fieldset>
+		<legend>Modificare</legend>
+	<form method="post" action="http://localhost/exam/update_mesaj.php">
+		<label>Nr. ordine curent: </label><input type="number" name="idOld"><br>
+		<label>Nr. ordine nou: </label><input type="number" name="idNew"><br>
+		<label>Text: </label><input type="text" name="text"><br>
+		<label>Secunde: </label><input type="number" name="secunde"><br>
+		<input type="submit" value="Modifica">
+	</form>
+	</fieldset>
+	<fieldset>
+		<legend>Stergere</legend>
+	<form method="post" action="http://localhost/exam/delete_mesaj.php">
+		<label>Nr. ordine: </label><input type="number" name="id"><br>
+		<input type="submit" value="Sterge">
+	</form>
+	</fieldset>
+</body>
+</html>

@@ -1,0 +1,26 @@
+table {
+    border-collapse: collapse;
+}
+
+#mytable th {
+	 border-bottom: 1px solid black;
+	 padding: 10px 30px;
+  
+  
+}
+
+#mytable th.asc:after {
+  display: inline;
+  content: '↓';
+}
+
+#mytable th.desc:after {
+  display: inline;
+  content: '↑';
+}
+
+#mytable td {
+	 border-bottom: 1px solid black;
+	 padding: 10px 30px;
+  
+}

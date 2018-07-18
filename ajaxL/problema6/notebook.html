@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Notebook</title>
+    <style>
+        table
+        {
+            border: 1px solid black;
+        }
+    </style>
+    <script>
+        function showTable() {
+            var xmlhttp;
+            var producator = document.getElementById('producator').value;
+            var procesor = document.getElementById('procesor').value;
+            var hdd = document.getElementById('hdd').value;
+            var ram = document.getElementById('ram').value;
+            var placavideo = document.getElementById('placavideo').value;
+            xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function ()
+            {
+                if(xmlhttp.readyState == 4)
+                {
+                    if (xmlhttp.status == 200)
+                    {
+                        document.getElementById("txt").innerHTML = xmlhttp.responseText;
+                    }
+                }
+            };
+            xmlhttp.open('GET', 'ShowTable.php?producator=' + producator + '&procesor=' + procesor + '&ram=' + ram + '&hdd=' + hdd + '&placavideo=' + placavideo, true);
+            xmlhttp.send();
+        }
+        function show(val) {
+            var xmlhttp;
+            //var producator = document.getElementById('producator').value;
+            //var procesor = document.getElementById('procesor').value;
+            //var hdd = document.getElementById('hdd').value;
+            //var ram = document.getElementById('ram').value;
+            //var placavideo = document.getElementById('placavideo').value;
+            xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function () {
+                if (xmlhttp.readyState == 4) {
+                    if (xmlhttp.status == 200) {
+                        console.log(val);
+                        // document.getElementById("txt").innerHTML = xmlhttp.responseText;
+                        document.getElementById(val).innerHTML = xmlhttp.responseText;
+                    }
+                }
+            };
+            //xmlhttp.open('GET', 'Show.php?producator=' + producator + '&procesor=' + procesor + '&ram=' + ram + '&hdd=' + hdd + '&placavideo=' + placavideo, true);
+            xmlhttp.open('GET', 'Show.php?' + 'val' + '=' + val);
+            xmlhttp.send();
+        }
+    </script>
+</head>
+<body onload="showTable(), show('producator'), show('procesor'), show('ram'), show('hdd'), show('placavideo')">
+    <form action="">
+        <select name="producator" id="producator"  onchange="showTable()">
+        </select>
+        <select name="procesor" id="procesor" onchange="showTable()">
+        </select>
+        <select name="ram" id="ram" onchange="showTable()">
+        </select>
+        <select name="hdd" id="hdd" onchange="showTable()">
+        </select>
+        <select name="placavideo" id="placavideo" onchange="showTable()">
+        </select>
+    </form>
+    <br>
+    <div id="txt"> </div>
+</body>
+</html>

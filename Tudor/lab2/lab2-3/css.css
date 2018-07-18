@@ -1,0 +1,51 @@
+
+
+.body{
+    height:100%;
+    margin: 0 ;
+    padding: 0;
+
+}
+
+.container{
+    min-height: 100%;
+    background-color: pink;
+    position: relative;
+
+}
+
+.header {
+    background-color: red;
+    text-align: center;
+    position:absolute;
+    width: 100%;
+    right:0;
+    height:100px;
+}
+
+.menu{
+    background-color: yellow;
+    position:absolute;
+    width: 100%;
+    height:25px;
+    text-align: center;
+    top:100px;
+}
+
+.section{
+    background-color: green;
+    position:absolute;
+    width: 100%;
+    text-align: center;
+    top:125px;
+    padding-bottom: 60px;
+}
+
+.footer{
+    background-color:pink;
+    position:absolute;
+    width: 100%;
+    text-align: center;
+    bottom:0;
+    height:60px;
+}

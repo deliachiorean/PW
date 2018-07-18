@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fancy Table</title>
+</head>
+<style>
+    table {
+    }
+
+        table tr th {
+            background: #f1f1f1;
+            cursor: pointer;
+        }
+
+        table tr td {
+            padding: 5px;
+            margin: 5px;
+        }
+</style>
+<body>
+
+    </head>
+<body>
+
+    <h2>Telefoane</h2>
+
+    <table id="phoneTable" border="1">
+        <thead>
+            <tr>
+                <th >Marca</th>
+                <th >Model</th>
+                <th >Culoare</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Samsung</td>
+                <td>Galaxy S6</td>
+                <td>Albastru</td>
+            </tr>
+            <tr>
+                <td>iPhone</td>
+                <td>6S</td>
+                <td>Gold</td>
+            </tr>
+            <tr>
+                <td>Nokia</td>
+                <td>730 Lumia</td>
+                <td>Verde</td>
+            </tr>
+            <tr>
+                <td>HTC</td>
+                <td>Desire 526G</td>
+                <td>Negru</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script type="text/javascript">
+        function sortTable(table, column, reverse) {
+
+            var table = table.tBodies[0];
+			var tr = table.rows;
+			var rowsArray = new Array();
+			var i;
+            for(i=0;i<tr.length;i++)
+				rowsArray.push(tr[i]);
+            
+
+            if (!reverse) {
+                reverse = 1;
+            }
+            else {
+                reverse = -1;
+            }
+
+            rowsArray = rowsArray.sort(
+                function (a, b) {
+                    return reverse * (a.cells[column].textContent.localeCompare(b.cells[column].textContent));
+                }
+            );
+
+            for (i = 0; i < tr.length; i++) table.appendChild(rowsArray[i]);
+        }
+
+        function makeTableSortable(table) {
+            var th = table.tHead.rows[0].cells;
+            var i = th.length;
+
+            while (i-- >= 0) {
+                (function (i) {
+                    var rev = 1;
+                    th[i].addEventListener('click', function () { sortTable(table, i, (rev = 1 - rev)) });
+                }(i));
+            }
+        }
+
+        makeTableSortable(document.getElementById("phoneTable"));
+    </script>
+</body>
+</html>

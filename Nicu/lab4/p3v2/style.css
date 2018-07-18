@@ -1,0 +1,21 @@
+table, h1 {
+	margin: 0 auto;
+	width: 480px;
+    height:480px;
+}
+
+
+table {
+	border-collapse: collapse;
+}
+
+td {
+	border: 1px solid black;
+	width: 120px;
+    height: 120px;
+	font-size: 20px;
+	text-align: center;
+	color: white;
+	background-color: teal;
+	background-size: 40px;	
+}

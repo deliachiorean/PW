@@ -1,0 +1,58 @@
+p{
+    position: relative;
+    min-width: 50px;
+    min-height: 120px;
+    left:114px;
+    background-color: transparent;
+    border-radius: .4em;
+    border:solid lightblue 5px;
+    display:block;
+    margin-top:25px;
+	padding-right:10px;
+	text-align:center;
+	padding-top:25px;
+	
+	
+}
+
+p:after{
+    content:'';
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-right-color: lightblue;
+    border-left: 0;
+    border-bottom: 0;
+    margin-top: -10px;
+    margin-left: -20px;
+	border-left: 10px solid transparent;
+    border-right: 10px solid;
+    border-top: 10px solid;
+	border-bottom: 10px solid transparent;
+}
+
+
+ul{
+    list-style-type: none;
+}
+
+.alice li:before {
+    content:'';
+    background: url('poza.jpg') no-repeat 10.63% 8.772%;
+    position:absolute;
+    left:0;
+    width: 114px;
+    height: 128px;
+}
+
+.bob li:before {
+    content:'';
+    background: url('poza.jpg') no-repeat 50% 8.772%;
+    position:absolute;
+    left:0;
+    width: 114px;
+    height: 128px;
+}

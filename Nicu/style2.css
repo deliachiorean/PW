@@ -1,0 +1,33 @@
+ul {
+	list-style-type: none;
+	border: 1px solid black;
+	padding: 20px;
+	width: 220px;
+	background-color: pink;
+}
+
+li {
+	padding: 0;
+	display: table;
+}
+
+img	{
+	width: 100px;
+	height: 100px;
+	
+}
+
+.img-text {
+	display: table-cell;
+	vertical-align: middle;
+	padding-left: 20px;
+}
+
+
+#shotgun, #sniper, #smg {
+	margin-bottom: 20px;
+}
+
+
+
+

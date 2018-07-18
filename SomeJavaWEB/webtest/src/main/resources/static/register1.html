@@ -1,0 +1,74 @@
+<html ng-app="Register1" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Web</title>
+
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/angular-material.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles/appStyle.css">
+</head>
+<body ng-controller="RegisterController1 as ctrl">
+
+    <div class="col-md-12">
+
+        <div class="col-md-4 col-md-offset-4 button-wrapper" style="padding-top: 5vh;">
+
+            <div class="panel panel-reddrop">
+                <div class="panel-heading">
+                    Register 1
+                </div>
+                <div class="panel-footer">
+                    <form action="/register2.html">
+                        <div class="form-group">
+                            <label>Username</label>
+                            <input ng-model="ctrl.registerData.username" ng-change="ctrl.saveData()" type="text" required class="form-control"
+                                   aria-describedby="username" placeholder="username">
+                            <small class="form-text text-muted">Please insert an username</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input ng-model="ctrl.registerData.email" ng-change="ctrl.saveData()" type="email" required class="form-control"
+                                   aria-describedby="email" placeholder="email">
+                            <small class="form-text text-muted">Please insert an email</small>
+                        </div>
+
+                        <input type="submit" class="btn-lg btn-reddrop" value="Next">
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+<footer>
+    <script src="scripts/core/jquery-3.3.1.min.js"></script>
+    <script src="scripts/core/angular.min.js"></script>
+    <script src="scripts/core/angular-route.js"></script>
+    <script src="scripts/core/angular-animate.js"></script>
+    <script src="scripts/core/angular-cookies.js"></script>
+    <script src="scripts/core/angular-resource.js"></script>
+    <script src="scripts/core/angular-sanitize.js"></script>
+    <script src="scripts/core/angular-messages.js"></script>
+    <script src="scripts/core/angular-aria.js"></script>
+    <script src="scripts/core/angular-material.min.js"></script>
+
+    <script src="scripts/core/Chart.bundle.min.js"></script>
+
+    <script>
+        var app = angular.module('Register1', ['ngRoute', 'ngAnimate', 'ngCookies', 'ngAria', 'ngMaterial', 'ngMessages']);
+
+        app.config(function ($mdThemingProvider) {
+            $mdThemingProvider.theme('default')
+                .dark();
+            $mdThemingProvider.theme('reddrop-toast');
+        });
+    </script>
+    <script src="scripts/controllers/RegisterController1.js"></script>
+
+</footer>
+</html>

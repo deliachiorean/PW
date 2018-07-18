@@ -1,0 +1,7 @@
+.a {
+    display: none;
+}
+
+.a:first-of-type {
+    display: block;
+}

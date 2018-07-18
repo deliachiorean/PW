@@ -1,0 +1,43 @@
+<taglib>
+    <tlib-version>1.0</tlib-version>
+    <jsp-version>2.0</jsp-version>
+    <short-name>TLD</short-name>
+
+    <tag>
+        <name>grafic</name>
+        <tag-class>mainPackage.GraficTagHandler</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <name>textox</name>
+            <required>true</required>
+        </attribute>
+        <attribute>
+            <name>textoy</name>
+            <required>true</required>
+        </attribute>
+        <attribute>
+            <name>minox</name>
+            <required>true</required>
+        </attribute>
+        <attribute>
+            <name>minoy</name>
+            <required>true</required>
+        </attribute>
+        <attribute>
+            <name>maxox</name>
+            <required>true</required>
+        </attribute>
+        <attribute>
+            <name>maxoy</name>
+            <required>true</required>
+        </attribute>
+        <attribute>
+            <name>culoare</name>
+            <required>true</required>
+        </attribute>
+        <attribute>
+            <name>valori</name>
+            <required>true</required>
+        </attribute>
+    </tag>
+</taglib>

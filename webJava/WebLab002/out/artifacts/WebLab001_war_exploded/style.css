@@ -1,0 +1,20 @@
+* {
+    font-size: 12px;
+    font-family: Verdana, serif;
+}
+
+input {
+    border: 1px solid #ccc;
+}
+
+.incorrect {
+    font-size:15px;
+    color:red;
+    font-weight:bolder;
+}
+
+.correct {
+    font-size:15px;
+    color:green;
+    font-weight:bolder;
+}

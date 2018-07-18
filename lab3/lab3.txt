@@ -1,0 +1,63 @@
+css
+	-link!!!!!
+	-<style>
+	-style attribute
+
+Selectors{
+	properties
+}
+
+selectors: 
+	1.#ID1
+	2.TAG_NAME -> h1{
+						prop	
+					}
+	3.selector class-> .CLASSNAME -> .pinkClass{
+												prop
+									 }
+									 .blueClass{
+									 			prop
+									 }
+
+								<h1 CLASS="pinkClass">
+								<h1 CLASS="blueClass">
+
+		div h1{ -> toate h1-urile care au ca parinte un div
+		
+		}						
+
+		a,div,h1{ ->acelasi set de prop pt toate
+
+		}
+
+
+	<div>
+		<span>
+			<h1> -> va fi ca la div h1 de mai sus
+		</span>
+	</div>	
+
+	div > h1{ -> toti h1 are ca parinte direct pe div
+
+	}
+____________________________
+	<div>
+	<span>
+	<h1>
+	<a>
+	---
+	</span>
+	</div>
+
+
+h1:hover{
+
+}
+
+dimensiuni:  % -> 100% tot eranul 
+	width:100px;
+	height
+
+						div - parinte 100%
+				div-copil1 - 50%  divcopil2 -50%
+div-copilcopil1 - 100%

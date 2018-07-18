@@ -1,0 +1,90 @@
+<div class="col-md-12">
+
+    <div class="col-md-4 col-md-offset-4 button-wrapper" style="padding-top: 5vh;">
+
+        <div class="btn-lg btn-reddrop" style="text-align: center" ng-show="!ctrl.userToken" ng-click="ctrl.goToLoginPage()" style="margin-bottom: 15px;">
+            Login
+        </div>
+
+        <div class="btn-lg btn-reddrop" style="text-align: center" ng-show="ctrl.userToken" ng-click="ctrl.logout()" style="margin-bottom: 15px;">
+            Logout
+        </div>
+
+        <img ng-src="/api/user/image?name={{ctrl.userToken}}" ng-show="ctrl.userToken">
+
+        <div class="panel panel-reddrop" ng-repeat="question in ctrl.questions">
+            <div class="panel-heading" ng-click="ctrl.selectQuestion(question)">
+                {{question.question}}
+            </div>
+            <ul class="list-group" ng-show="ctrl.selectedQuestion == question.uuid">
+                <li class="list-group-item" ng-repeat="answer in ctrl.answers">
+                    {{answer.answer}}
+                </li>
+            </ul>
+            <div class="panel-footer" ng-show="ctrl.selectedQuestion == question.uuid && ctrl.userToken">
+                <form ng-submit="ctrl.addAnswer(question)">
+
+                    <div class="form-group">
+                        <label>Question</label>
+                        <input ng-model="ctrl.answer" type="text" required class="form-control"
+                               aria-describedby="answer" placeholder="answer">
+                        <small id="answerHelp" class="form-text text-muted">Please have a proper behaviour in your answers</small>
+                    </div>
+
+                    <input type="submit" class="btn-lg btn-reddrop col-md-12" value="Add Answer">
+
+                </form>
+            </div>
+        </div>
+
+        <div class="panel panel-reddrop" ng-show="ctrl.userToken">
+            <div class="panel-heading">
+                Ask a new question
+            </div>
+            <div class="panel-body">
+                <form ng-submit="ctrl.addQuestion()">
+
+                    <div class="form-group">
+                        <label for="question">Question</label>
+                        <input ng-model="ctrl.question" type="text" required class="form-control" id="question"
+                               aria-describedby="question" placeholder="question">
+                        <small id="questionHelp" class="form-text text-muted">Please have a proper behaviour</small>
+                    </div>
+
+                    <input type="submit" class="btn-lg btn-reddrop col-md-12" value="Add Question">
+
+                </form>
+            </div>
+        </div>
+
+        <div class="panel panel-reddrop" ng-show="ctrl.userToken">
+            <div class="panel-heading">
+                Change stuff
+            </div>
+            <div class="panel-body">
+
+                <form ng-submit="ctrl.changeUser()">
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" ng-model="ctrl.password"  required class="form-control" id="password"
+                               aria-describedby="password" placeholder="password">
+                        <small id="passwordHelp" class="form-text text-muted">Change your password</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="avatar">Password</label>
+                        <input type="file" required class="form-control" id="avatar" onchange="angular.element(this).scope().uploadFile(this.files)"
+                               aria-describedby="avatar" placeholder="avatar">
+                        <small id="avatarHelp" class="form-text text-muted">Change your avatar</small>
+                    </div>
+
+                    <input type="submit" class="btn-lg btn-reddrop col-md-12" value="Change">
+
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+</div>

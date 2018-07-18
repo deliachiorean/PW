@@ -1,0 +1,78 @@
+-- MySQL Workbench Forward Engineering
+
+SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
+SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
+SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
+
+-- -----------------------------------------------------
+-- Schema mydb
+-- -----------------------------------------------------
+-- -----------------------------------------------------
+-- Schema pregatire2
+-- -----------------------------------------------------
+
+-- -----------------------------------------------------
+-- Schema pregatire2
+-- -----------------------------------------------------
+CREATE SCHEMA IF NOT EXISTS `pregatire2` DEFAULT CHARACTER SET utf8 ;
+USE `pregatire2` ;
+
+-- -----------------------------------------------------
+-- Table `pregatire2`.`questions`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `pregatire2`.`questions` (
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `question` VARCHAR(100) NULL DEFAULT NULL,
+  `data` DATETIME NULL DEFAULT NULL,
+  `utilizator` VARCHAR(100) NULL DEFAULT NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB
+AUTO_INCREMENT = 7
+DEFAULT CHARACTER SET = utf8;
+
+
+-- -----------------------------------------------------
+-- Table `pregatire2`.`users`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `pregatire2`.`users` (
+  `user` VARCHAR(100) NOT NULL,
+  `password` VARCHAR(100) NULL DEFAULT NULL,
+  `avatar` VARCHAR(100) NULL DEFAULT NULL,
+  `scris` VARCHAR(100) NULL DEFAULT NULL,
+  `background` VARCHAR(100) NULL DEFAULT NULL,
+  `font` VARCHAR(100) NULL DEFAULT NULL,
+  PRIMARY KEY (`user`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
+
+
+-- -----------------------------------------------------
+-- Table `pregatire2`.`answers`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `pregatire2`.`answers` (
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `answer` VARCHAR(100) NULL DEFAULT NULL,
+  `idquestion` INT(11) NULL DEFAULT NULL,
+  `iduser` VARCHAR(100) NULL DEFAULT NULL,
+  `dataCreare` DATETIME NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `idquestion_idx` (`idquestion` ASC),
+  INDEX `iduser_idx` (`iduser` ASC),
+  CONSTRAINT `idquestion`
+    FOREIGN KEY (`idquestion`)
+    REFERENCES `pregatire2`.`questions` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `iduser`
+    FOREIGN KEY (`iduser`)
+    REFERENCES `pregatire2`.`users` (`user`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
+AUTO_INCREMENT = 6
+DEFAULT CHARACTER SET = utf8;
+
+
+SET SQL_MODE=@OLD_SQL_MODE;
+SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
+SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;

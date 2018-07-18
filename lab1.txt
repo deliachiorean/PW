@@ -1,0 +1,31 @@
+-HTML
+<!DOCTYPE html> 
+<HTML>
+<HEAD>
+
+</HEAD>
+<BODY>
+<a>
+<h1>
+<input>
+</BODY>
+</HTML>
+
+
+titlu,header, poza, link,input, html 5
+ftp://linux.scs.ubbcluj.ro -this pc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

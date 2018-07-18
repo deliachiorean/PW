@@ -1,0 +1,25 @@
+ul {
+  background-color: teal;
+  border: 1px solid black;
+  width: 560px;
+  padding: 20px;
+  list-style-type: none;
+}
+
+img {
+  width: 200px;
+  height: 150px;
+}
+.scris {
+  display: table-cell;
+  vertical-align: middle;
+ padding-left: 20px;
+ font-size: 20px;
+  
+   
+}
+li {
+  margin: 20px 20px 20px 20px;
+  padding: 0;
+  display: table;
+}

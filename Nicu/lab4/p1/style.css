@@ -1,0 +1,12 @@
+div {
+	display: inline-block;
+}
+
+p {
+	font-size: 20px;
+}
+
+select {
+	width: 100px;
+	height: 200px;
+}

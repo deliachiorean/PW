@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Banca</title>
+	<script type="text/javascript" src="jquery-2.1.4.js"></script>
+	<script type="text/javascript">
+		// aici cod de jQuery
+		 $('document').ready(function() {
+            function displayTransactions() {
+                $.ajax({
+                    url: "getTransactions.php",
+                    dataType: 'json'
+                    // dataType: 'text'
+                })
+                .done(function( data ) {
+                	//console.log(data);
+                	$("#transactions tbody");
+                    for (var i = 0; i < data.length; i++) {
+                        $("#transactions tbody").append("<tr> <td>"+ data[i].id + "</td>" +
+                        						"<td>"+ data[i].userSource + "</td>" +
+                        						"<td>"+ data[i].userTarget + "</td>" +
+                        						"<td>"+ data[i].amount + "</td>" +
+                        						"<td>"+ data[i].date_time + "</td> </tr>" );
+                    }
+                });
+            }; // end -> displayTransactions
+
+            displayTransactions();
+
+            
+        }); // end -> document ready		
+	</script>
+</head>
+
+<body>
+
+
+<p> Tranzactii: 
+	<table id = "transactions">
+		<thead>
+			<th> Id </th>
+			<th> Utilizator sursa </th>
+			<th> Utilizator destinatie </th>
+			<th> Suma </th>
+			<th> Data </th>
+		</thead>
+		<tbody>
+			
+		</tbody>
+	</table>
+</p>
+
+<button onclick="location.href='index.php'"> Back</button>
+
+
+
+</body>
+</html>
+

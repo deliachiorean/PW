@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+	<script type="text/javascript" src="form.js"></script>
+	<style type="text/css">
+		input {
+			box-sizing: border-box;
+			display: block;
+			width: 200px;
+			height:30px;
+		}
+	</style>
+</head>
+<body>
+
+<h1>form</h1>
+<form name="pw-form" onsubmit="return validateForm()" method="POST">
+	<input type="text" name="name" placeholder="name">
+	<input type="date" name="birth-date">
+	<input type="number" name="age" placeholder="age">
+	<input type="email" name="email" placeholder="email">
+	<input type="submit" name="submit" value="submit">
+</form>
+
+
+</body>
+</html>

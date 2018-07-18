@@ -1,0 +1,17 @@
+ul{
+	list-style: none;
+}
+li{display: inline-block;
+}
+a{
+	background: url("p4.png") no-repeat;
+	width: 70px;
+	height:70px;
+	margin-left: 10px;
+}
+.facebook{
+	background-position: 0 -84px;}
+}
+.facebook:hover{
+	background-position: 0 0px;}
+}

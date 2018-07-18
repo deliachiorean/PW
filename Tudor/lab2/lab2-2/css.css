@@ -1,0 +1,42 @@
+header{
+    background-color: red;
+    height: 20vh;
+    vertical-align: middle;
+    line-height: 20vh;
+}
+
+ul{
+    background-color: yellow;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: table;
+    height: 3vh;
+}
+
+div{
+    background-color: lightgreen;
+    height: 50vh;
+    vertical-align: middle;
+    line-height: 50vh;
+}
+
+li{
+    display: table-cell;
+    border-right: 1px solid black;
+    padding-right: 100px;
+    padding-left: 50px;
+
+}
+
+footer{
+    background-color: pink;
+    vertical-align: middle;
+    line-height: 27vh;
+    height: 27vh;
+}
+
+body{
+    margin: 0px;
+}

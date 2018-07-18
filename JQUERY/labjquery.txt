@@ -1,0 +1,34 @@
+lab jquery
+
+jquery(...)
+$()
+function $!{}
+in js nu pot sa definesc functii cu 12324... la inceput
+
+$(document).ready(function(){
+.......................
+			});
+$(function(){
+.............
+	});
+
+$("li")->toate elemente lui li
+$("#b1")->echiv cu get_elelment_by_id
+
+$("#mydiv").html() -> fara param ca un getter
+	   .html("..") -> rol de setter
+$("#mi").val()
+	.val("..")-> setez valoarea
+
+$("#b1").click(function(){->la click sa fac ceva
+..........});
+$("li").on("click",function(){
+.......................});
+
+
+exemplu 
+<input> text
+<div>
+<button>
+
+la click pe buton va la in input sa apara hello world  si in div tot asa, dar ca text

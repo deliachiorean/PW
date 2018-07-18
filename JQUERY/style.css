@@ -1,0 +1,29 @@
+#light-box {
+   position: fixed;
+   height: 100%;
+   width: 100%;
+   background: rgba(0, 0, 0, 0.5);
+   top: 0;
+   left: 0;
+   color: #fff;
+ }
+ 
+ #light-box img {
+   max-width: 80%;
+   max-height: 80%;
+   position: absolute;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   margin: auto;
+ }
+ 
+ .img {
+   max-width: 280px;
+   max-height: 200px;
+   border: 1px solid #ccc;
+   padding: 10px;
+   margin: 5px;
+   box-shadow: 0px 2px 3px #000;
+ }

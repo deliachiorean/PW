@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Inregistrare</title>
+</head>
+
+	<script>
+        $(function () {
+            // $("#datepicker").datepicker({minDate: new Date(2018, 5, 20)});
+            $("#datepicker").datepicker({minDate: new Date()});
+        });
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="select.js"></script>
+<body>
+	<label>Nume</label>
+	<input type="text" name="nume" id="nume">
+	<br>
+	<label>Medie absolvire liceu</label>
+	<input type="text" name="medie" id="medie">
+	<br>
+	<label>Nota</label>
+	<input type="number" name="nota" id="nota">
+	<br>
+	<label>Materie pentru Nota: </label>
+	<input type="radio" name="mate" id="mate" value="Matematica">
+	<input type="radio" name="info" id="info" value="Informatica">
+	<br>
+	<label>Data nasterii</label>
+	<input type="text" name="data" id="datepicker" placeholder="Data zborului" required><br>
+
+	<div>
+		<select id='items' multiple size='5'>
+	    	<option>Informatica Romana </option>
+	    	<option>Informatica Engleza</option>
+	    	<option>Informatica Maghiara</option>
+		    <option>Informatica Germana</option>
+		    <option>Matematica Informatica Romana</option>
+		    <option>Matematica Informatica Engleza</option>
+		    <option>Matematica Engleza</option>
+		    <option>Matematica Romana</option>
+
+		    
+		</select>
+		<select id='selected_items' multiple size='5'>
+			<option>item2</option>
+		    
+		</select>
+	</div>
+	
+
+
+</body>
+</html>

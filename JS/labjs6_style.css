@@ -1,0 +1,19 @@
+body{
+	background-color: ivory;
+	font-family: Papyrus;
+	font-size: 15px;
+	text-align: center;
+}
+table {
+	border: 2px solid black;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+td {
+
+	width: 50px;
+	height: 50px;
+	border: 2px solid black;
+}
+
+		

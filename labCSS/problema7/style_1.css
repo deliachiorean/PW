@@ -1,0 +1,52 @@
+ul.dialog {
+	list-style-type: none;
+	margin:0; 
+	padding-top: 20px;
+	padding-left: 80px;
+}
+
+li.alice::before {
+	background-position: -25px 120px;
+}
+
+li.bob::before {
+    background-position: -20px -150px;
+}
+
+li::before {
+	background-image: url("css-pr7.png");
+	content:"";
+	height: 76px;
+	width:80px;
+	position: absolute;
+	top: 0px;
+	left:-100px;
+}
+
+li::after {
+	content: ''; 
+	position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid;
+    border-top: 10px solid;
+	border-bottom: 10px solid transparent;
+	right: 100%;
+	top: 30px;
+}
+
+li.alice, .bob {
+	position: relative;
+	padding: 20px;
+	border-radius: 10px;
+	z-index:-1;
+	margin-left: 30px;
+	margin-top: 15px;
+	margin-right: 20px;
+	border: 1px solid black;
+	text-align: center;
+	position: relative;
+	box-shadow: 1px 7px 5px lightgrey;
+	min-height: 20px;
+	min-width: 50px;
+	
+}

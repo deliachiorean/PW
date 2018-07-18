@@ -1,0 +1,41 @@
+h2 {
+	display: inline-block;
+	height: 10px;
+	width: 100px;
+}
+
+#numeid, #prenumeid, #cnpid{
+	/*box-sizing: border-box;*/
+	background-image: url("patrat.jpg");
+	background-size: 25px;
+	height: 25px;
+	display: inline-block;
+	/*text-align: center;
+	padding: 1;*/
+	
+}
+
+#numeid{
+	width: 500px;
+}
+
+#prenumeid{
+	width: 500px;
+}
+
+#cnpid{
+	width: 326px;
+}
+
+input {
+	background: none;
+ 	display: block;
+ 	width: inherit;
+  	padding: 3px 0 0;
+  	border:none;
+  	font-family: monospace;
+  	font-size: 20px;
+  	letter-spacing: 14px;
+}
+
+

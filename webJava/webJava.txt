@@ -1,0 +1,23 @@
+									tomcat
+browser								server 
+   	get	/ hello.jsp								jsp	
+	-------------------------------------------->				<html>
+	<--------------------------------------------										...
+										<%
+										......codul java
+										%>		
+
+servlet
+		get /users
+	------------------------------------------->WEB.XML
+								UsersServlet->UsersServlet.java	
+										-> sa extinda clasa HttpServlet
+										-> suprascriu metoda care face requestul ( doGet( , ) aici); cu post doPost( , )-> 2 parametri
+	<-------------------------------------------									-> ininte de executia metodei doGet() pun un filtru care poate sa fie Request Filter
+																							      Response Filter(cand trimit inapoi la client)
+																								-> clasa la care e mapat filtrul trebuie sa implementeze inrterfata Filter
+																								
+combinatia servlet si jsp
+														 o trimit mai departe(model)				
+	---------------------------------------------> _________> UsersServlet.java( am o lista de obiecte users)
+									(Controller)				---------------------> Users.jsp(View)

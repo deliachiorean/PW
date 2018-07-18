@@ -1,0 +1,22 @@
+#wrapper {
+  border: 1px solid #333;
+  width: 500px;
+}
+
+#wrapper ul li img {
+  width: 180px;
+  height: 150px;
+}
+
+#wrapper ul li {
+  float: left;
+  background-color: darkgreen;
+  margin: 15px;
+  list-style-type: none;
+  width: 200px;
+  padding-top: 10px;
+  text-align: center;
+}
+#wrapper ul {
+  padding: 0;
+}

@@ -1,0 +1,84 @@
+<!-- form- 10 inputuri, select, fildset-legend,audio/video,table,ol,ul-->
+<!doctype html>
+<html>
+<head>
+	<title>lab2</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<fieldset>
+		<legend><h2>Inregistrare</h2></legend>
+			<form>
+				Nume: <input type="text" name="nume">
+  				Prenume: <input type="text" name="prenume"><br><br>
+  				Varsta: <input type="Number"  min="0" max="100" name="varsta">
+  				Adresa: <input type="text" name="adresa">
+  				Localitate: <select>
+  					<option>Cluj-Napoca</option>
+  					<option>Alba Iulia</option>
+  					<option>Bucuresti</option>
+  					<option>Bacau</option>
+  					<option>Timisoara</option>
+  					<option>Iasi</option>
+  					<option>Satu Mare</option>
+  					<option>Baia Mare</option>
+  					<option>Deva</option>
+  				</select><br><br>
+  				Judet: <input type="text">
+  				Email: <input type="Email"> <input type="radio">F <input type="radio">M<br><br>
+  				Casatorit: <input type="checkbox">Necasatorit <input type="checkbox"><br>
+  				Hobby-uri: <textarea cols="20 rows=5"></textarea>
+
+			</form>
+			<table> 
+				<tr>
+
+				<td >Ocupatie: </td>
+				<td><input type="text"></td>
+				<td>Profesie: </td>
+				<td><input type="text">
+				</td>
+			</tr>
+			<tr><td></td><td colspan="1">Locuri de munca:</td>
+				<td colspan="2"><ol><li>Compania : <input type="text"><br>
+											Posturi:
+											<ul><li><input type="text"></li>
+												<li><input type="text"></li>
+											</ul>
+									</li>
+									<li>Firma : <input type="text"><br>
+											Posturi:
+											<ul><li><input type="text"></li>
+												<li><input type="text"></li>
+											</ul>
+									</li>
+									<li>Firma : <input type="text"><br>
+											Posturi:
+											<ul><li><input type="text"></li>
+												<li><input type="text"></li>
+											</ul>
+									</li>
+								</ol>
+							</td>
+						</tr>
+					</table>
+					Data: <input type="Date">
+					Ora: <input type="time"><br><br>
+					<button>Inregistrare</button><br><br>
+					Am aprecia daca ati acorda un vot pentru site: <input type="range">
+					<h3> Mersi pentru inregistrare </h3>
+					<br>
+					<audio controls>
+  					
+  						<source src="imgDrag.mp3" type="audio/mpeg">
+  						</audio>
+					<br>
+					<h2>Something funny</h2>
+					<video width="320" height="240" controls muted>
+  						<source src="movie.mp4" type="video/mp4">
+  						</video>
+
+
+					
+	</fieldset>
+</body>

@@ -1,0 +1,17 @@
+.divProdus {
+    border: 1px solid black;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.imgbox {
+    float:left;
+    height: 300px;
+    position:relative;
+    width:52px;
+}
+
+.img {
+    position:absolute;
+    bottom:0px;
+}

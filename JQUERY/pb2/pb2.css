@@ -1,0 +1,10 @@
+input{
+	font-family: Papyrus;
+	border: 1px solid black;
+	background-color: beige;
+	box-sizing: border-box;
+	display: block;
+	width: 500px;
+	height:40px;
+	font-size: 15px;
+}

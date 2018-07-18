@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JOC Spanzuratoare</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="startJoc.js" content="text/javascript"></script>
+    <style>
+        table tr td{
+            border: 2px solid blue;
+        }
+        td{
+            width: 40px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+Ghiceste cuvantul!!!
+<p id="nivel"></p><br>
+<p id="timp"></p><br>
+<p id="numarIncercari"></p><br>
+<table id="cuvant">
+    <tr id="rand">
+    </tr>
+</table>
+<br>
+
+<form>
+    <input type="text" maxlength="1" name="litera" id="litera">
+    <input type="button" value="Ghiceste LITERA" name="ghicesteLitera" id="ghicesteLitera">
+</form>
+
+</body>
+</html>

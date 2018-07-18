@@ -1,0 +1,50 @@
+html,body{
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+
+#canvas-game{
+    margin:0 auto;
+    text-align:left;
+    width:612px;
+    margin-top:20px;
+    border:Solid 1px #ebe5e5;
+    height:385px;
+    position:relative;
+}
+
+.clear{
+    clear:both;
+}
+
+.box-picture{
+    float:left;
+    width:100px;
+    height:75px;
+    border:solid 1px #ebe5e5;
+    display:none;
+}
+
+.box-picture > img{
+    width:100px;
+    height:75px;
+}
+
+.box-cover-wrapper{
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:100;
+}
+
+.box-cover{
+    width:100px;
+    height:75px;
+    background:url(image7.jpg) no-repeat;
+    border:solid 1px #ebe5e5;
+    float:left;
+    cursor:pointer;
+}
+
+

@@ -1,0 +1,30 @@
+
+
+.flex-container{
+	border: 1px solid black;
+	width: 500px;
+	display: flex;
+	align-items: baseline;
+	
+} 
+.flex-container > div{
+	margin:10px;
+}
+.div1 {
+    width: auto;
+  	align-self: center;
+   	text-align: center;
+   
+}
+
+.pizza{
+	max-width: 200px;
+}
+
+.div2 {
+	
+	align-self: center;
+    width: auto;
+    padding: 10px;
+    
+}

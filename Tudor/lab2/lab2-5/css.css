@@ -1,0 +1,51 @@
+body{
+
+    margin:30px;
+    padding: 15px;
+    width:40%;
+    height: 60%;
+}
+.super ul{
+    border:1px solid #000;
+    background-color: #EDF010;
+    list-style: none;
+    padding:2% 2% 2% 2%;
+}
+img{
+    height:30% ;
+    width:30%;
+}
+#superanother li {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5%;
+    height:30% ;
+    width:30%;
+
+}
+#superanothertwo li{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5%;
+    height:30% ;
+    width:30%;
+
+}
+
+#superanotherthree li{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5%;
+    height:30% ;
+    width:30%;
+
+}
+
+#superanotherfour li {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5%;
+    height:30% ;
+    width:30%;
+
+}

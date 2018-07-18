@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Propmpter</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		#myProgress {
+		    width: 100%;
+		    background-color: grey;
+		}
+		#myBar {
+		    width: 1%;
+		    height: 30px;
+		    background-color: green;
+		}
+		#content {
+			text-align: center;
+			padding: 15% 0;
+		}
+		i {
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<button id="start" type="button">Start</button>
+	<div id="content">
+	</div>
+	<i class="fa fa-close" style="font-size:48px;color:red"></i>
+	<div id="myProgress">
+	  <div id="myBar"></div>
+	</div>
+	<script src="prompter.js"></script>
+</body>
+</html>

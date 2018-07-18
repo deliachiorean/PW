@@ -1,0 +1,17 @@
+table tr td{
+            border: 1px solid black;
+
+           color:white;
+            font-family: "Arial Black";
+            text-align: center;
+}
+td{
+    width: 120px;
+    height: 120px;
+}
+
+table {
+    width: 480px;
+    height:480px;
+    background-color: teal;
+}
